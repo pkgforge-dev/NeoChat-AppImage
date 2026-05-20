@@ -16,7 +16,7 @@ export QT_DIR=qt6
 export DEPLOY_PULSE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/neochat /usr/lib/qt6/plugins/kf6/purpose/neochatshareplugin.so
+quick-sharun /usr/bin/neochat /usr/lib/qt6/plugins/kf6/purpose/neochatshareplugin.so /usr/lib/libKF6Notifications.so*
 
 # Additional changes can be done in between here
 echo 'ANYLINUX_DO_NOT_LOAD_LIBS=libpipewire-0.3.so*:${ANYLINUX_DO_NOT_LOAD_LIBS}' >> ./AppDir/.env
